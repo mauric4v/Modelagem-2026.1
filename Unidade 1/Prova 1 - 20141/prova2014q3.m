@@ -8,7 +8,7 @@ w = logspace(-1, 2, 100);%0.1 a 100
 ganho = zeros(1,100);
 fase = zeros(1,100);
 fase_deg = zeros(1,100);
-t= zeros(1,5000);
+t = zeros(1,5000);
 
 Vp = 10; %aumenta o ganho pra diminuir o ruido
 

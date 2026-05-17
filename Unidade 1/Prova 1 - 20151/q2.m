@@ -14,7 +14,7 @@ conts = zeros(size(centros));
 soma_media = 0;
 %gerar histograma
 for i = 1:a
-  [Vmedido] = voltimetro5(0);
+  [Vmedido] = voltimetro4(0);
   soma_media += Vmedido;
   [aux idc] = min((Vmedido-centros).^2);
   conts(idc) += 1;

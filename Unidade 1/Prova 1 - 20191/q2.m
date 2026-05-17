@@ -2,7 +2,7 @@ clc;
 clear;
 close all;
 
-load pkg control
+pkg load control
 f = [80 60 50 60 70];
 Vp = [110 110 220 220 330];
 
