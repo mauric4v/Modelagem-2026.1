@@ -43,9 +43,9 @@ u2 = X(2)
 
 #plotar os graficos dnv
 
-for i = 1:101
-     idc_final = i*101;
-     idc_inicial = (idc_final - 101) + 1;
+for i = 1:length(U1)
+     idc_final = i*length(U1);
+     idc_inicial = (idc_final - length(U1)) + 1;
 
      Vreconstruido(:,i) = ymV(idc_inicial:idc_final);
      Wreconstruido(:,i) = ymW(idc_inicial:idc_final);
