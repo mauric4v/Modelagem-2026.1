@@ -30,8 +30,8 @@ plot(centros,prob);
 
 fA=( 1/(sqrt(2*pi*(varA))) ).*exp( -( (centros.^2 + 0)./(2*varA)) );
 fB=( 1/(sqrt(2*pi*(varB))) ).*exp( -( (centros.^2 + 0)./(2*varB)) );
-Fa = fA.*0.01;
-Fb = fB.*0.01;
+Fa = fA*0.01;
+Fb = fB*0.01;
 hold on
 plot(centros,Fa,'r');
 hold on
