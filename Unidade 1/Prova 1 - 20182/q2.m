@@ -5,13 +5,12 @@ close all
 tamos = 0.0001;
 periodos = 5;
 T = 0.005;
-pulso = [10*ones(1, (0.004/tamos)), zeros(1, 0.001/tamos)]; %gera um periodo da onda
+pulso = [10*ones(1, (0.004/tamos)), zeros(1, 0.001/tamos)]; 3-4%gera um periodo da onda
 sinal=[];
 
 for i = 1:periodos %quantidade de periodos
   sinal = [sinal pulso]; %concatena os periodos para gerar o sinal
 endfor
-
 t = -0.002 : tamos : -0.002 + (T*periodos) -tamos; %sinal de tempo corespondente a onda (remove um extremo, ja que o pulso tambem nao tem)
 %como pulso foi montado a partir da borda de subida, o periodo comeca 0.002 ms antes de 0, por isso o sinal de tempo está deslocado
 %por -0.002, para que o sinal fique com a fase mostrada na figura.
