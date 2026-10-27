@@ -6,7 +6,6 @@ pkg load control
 fa = 200; %freq de amostragem
 w = 2*pi*60;
 Vp = 220; %ganho da entrada
-
 %usando mmq para encontrar o ganho e fase de cada frequencia
 for i= 0:3
     tamos= (2*pi)/(fa*w); %periodo de amostragem

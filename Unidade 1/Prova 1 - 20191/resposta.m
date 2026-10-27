@@ -16,7 +16,7 @@ end
 prob =cont./a;
 
 %plot(Vm)
-plot(centros,prob);
+bar(centros,prob);
 prob_ideal = 0*prob;
 
 for i=1:length(centros)

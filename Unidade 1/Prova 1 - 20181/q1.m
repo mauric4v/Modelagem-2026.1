@@ -26,12 +26,12 @@ endfor
 erros
 porcentam_acerto = ((qtd_avaliacoes-erros)/qtd_avaliacoes)*100
 
-%%load('grupo_de_teste.mat');
-%%
-%%A=[idade.^0];
-%%for i = 1:nexp
-%%  A=[A, idade.^i, colesterol.^i, pressao.^i,(idade.*colesterol).^i,(idade.*pressao).^i,(pressao.*colesterol).^i,(idade.*pressao.*colesterol).^i,(idade.*idade).^i,(pressao.*pressao).^i,(colesterol.*colesterol).^i];
-%%endfor
-%%
-%%ym = A*param;
-%%ym = round(ym)
+load('grupo_de_teste.mat');
+
+A=[idade.^0];
+for i = 1:nexp
+  A=[A, idade.^i, colesterol.^i, pressao.^i,(idade.*colesterol).^i,(idade.*pressao).^i,(pressao.*colesterol).^i,(idade.*pressao.*colesterol).^i,(idade.*idade).^i,(pressao.*pressao).^i,(colesterol.*colesterol).^i];
+endfor
+
+ym = A*param;
+ym = round(ym)

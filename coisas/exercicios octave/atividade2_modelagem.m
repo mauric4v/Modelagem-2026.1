@@ -18,7 +18,7 @@ t2 = [0:0.001:3];
 y = (-exp(-4*t2)+1)/2;
 
 figure(1)
-subplot(2,1,1)
+#subplot(2,1,1)
 plot(t1,aprox,'b')
 title('aprox em azul e y(t) em vermelho')
 hold

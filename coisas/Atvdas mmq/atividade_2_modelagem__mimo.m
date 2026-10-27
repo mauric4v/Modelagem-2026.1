@@ -37,7 +37,7 @@ z_est_vetor=paramBz(1,1)*x + paramBz(2,1)*y+ paramBz(3,1).*x.*y;
 figure(2)
 scatter3(x,y,w);%scatter das amostras de w
 hold
-mesh(X,Y,w_est);%superficie estimada
+surf(X,Y,w_est);%superficie estimada
 
 for i=1:length(w_est_vetor) %erro do ruido
   erro_w(i)=w_est_vetor(i)-w(i);

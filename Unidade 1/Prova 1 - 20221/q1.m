@@ -16,12 +16,12 @@ freq3= 1/(t3(2)-t3(1));
 %usando serie de fourier
 x = t2(:); %tranformando os dados em vetores coluna
 y2 = y2(:);
-x2 = x2(:);
+x2= x2(:);
 %A=[x.^0]; %funcao base constante
 w1 = 2*pi*100;
 w2 = 2*pi*200;
 w3 = 2*pi*1000;
-w4 = 2*pi*2000;2
+w4 = 2*pi*2000;
 
 A=[sin(x.*w1),cos(x.*w1), sin(x.*w2),cos(x.*w2), sin(x.*w3),cos(x.*w3), sin(x.*w4),cos(x.*w4)];
 
